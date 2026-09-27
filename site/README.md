@@ -6,13 +6,15 @@ HTML・CSS・JavaScriptだけで動く、GitHub Pages向けの静的サイトで
 
 `index.html`をブラウザで開いてください。無料鑑定もローカルで動作します。編集中は簡易HTTPサーバーを利用しても構いません。
 
-## GitHubにアップする
+## GitHubで更新する
 
-このフォルダーの**中身**を、サイト用リポジトリの最上位に置きます。`index.html`、`styles.css`、`app.js`、`numerology.js`、`assets`フォルダー、`.nojekyll`が同じ階層にあれば準備完了です。`outputs`や`work`フォルダーはサイトに含めません。
+公開URL：https://basasi19.github.io/sasasa-suuhi-site/
 
-GitHub Pagesでは、サイト用リポジトリの公開元を対象ブランチのルートに設定します。相対パスを使用しているので、`https://アカウント名.github.io/リポジトリ名/`のようなURLでも動きます。
+リポジトリ内では、このフォルダーを`site/`として保ちます。`main`ブランチのサイト本体を更新すると、`.github/workflows/pages.yml`が`site/`だけをGitHub Pagesへ公開します。`outputs`や`work`は含めません。
 
-設定場所：`Settings` → `Pages` → `Deploy from a branch` → 対象ブランチと `/(root)` → `Save`。詳しくは[GitHub公式の公開元設定](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)を参照してください。
+GitHubの設定は`Settings` → `Pages` → `Source: GitHub Actions`です。公開状況や手動実行は`Actions` → `Publish Sasasa website`から確認できます。READMEだけの編集では再公開しません。詳しくは[GitHub公式のワークフロー設定](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)を参照してください。
+
+配布ZIPを別のホスティングに配置する場合は、ZIP内の`index.html`が公開ディレクトリの直下になるように展開してください。相対パスを使用しているので、サブディレクトリでの公開にも対応します。
 
 ## 内容を直す場所
 
@@ -59,4 +61,4 @@ Klee OneはGoogle Fonts公式配布から取得したSIL Open Font Licenseのフ
 
 ## 公開について
 
-[GitHubリポジトリ](https://github.com/basasi19/sasasa-suuhi-site)にサイト一式を保管しています。現時点では、GitHub PagesによるWebサイトの一般公開は未設定です。公開URLが決まったら、そのURLで名刺用QRコードを作成できます。
+[GitHubリポジトリ](https://github.com/basasi19/sasasa-suuhi-site)にサイト一式を保管し、[GitHub Pages](https://basasi19.github.io/sasasa-suuhi-site/)で公開します。この公開URLをInstagramや名刺用QRコードに利用できます。

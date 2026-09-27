@@ -2,6 +2,8 @@
 
 数秘術と対話を通して、自分の本音や持ち味を知るための案内サイトです。
 
+**[公開サイトを開く](https://basasi19.github.io/sasasa-suuhi-site/)**
+
 ## サイト本体
 
 [`site/`](site/) に、HTML・CSS・JavaScript、画像、フォントをまとめています。ビルドやAPIキーは不要です。`site/index.html`をブラウザで開くと、無料ミニ鑑定も手元で動作します。
@@ -17,9 +19,9 @@
 
 文章・料金・リンクは`site/index.html`、デザインは`site/styles.css`、数字ごとの説明は`site/numerology.js`を編集します。詳細は[サイトの説明書](site/README.md)をご覧ください。
 
-## 公開する
+## 公開と更新
 
-このリポジトリへのアップロードと、Webサイトの一般公開は別の操作です。ホスティングする際の公開ディレクトリは`site/`です。静的サイトとしてそのまま配信できます。
+GitHub Pagesで`site/`の内容を配信します。`main`ブランチのサイト本体を更新すると、[公開ワークフロー](.github/workflows/pages.yml)が自動実行され、同じURLに反映されます。公開状況はGitHubの`Actions`から確認できます。
 
 ## 素材
 

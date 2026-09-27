@@ -59,4 +59,4 @@ Klee OneはGoogle Fonts公式配布から取得したSIL Open Font Licenseのフ
 
 ## 公開について
 
-この制作段階では、GitHubへのアップロードや一般公開は行っていません。公開URLが決まったら、そのURLで名刺用QRコードを作成できます。
+[GitHubリポジトリ](https://github.com/basasi19/sasasa-suuhi-site)にサイト一式を保管しています。現時点では、GitHub PagesによるWebサイトの一般公開は未設定です。公開URLが決まったら、そのURLで名刺用QRコードを作成できます。

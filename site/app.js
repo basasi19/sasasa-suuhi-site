@@ -9,6 +9,16 @@
   const result = document.getElementById('reading-result');
   const fields = [year, month, day];
   const calculator = window.SasasaNumerology;
+  const garden = document.querySelector('.number-garden');
+  const gardenNumber = document.getElementById('visual-number');
+  const gardenCaption = document.getElementById('visual-caption');
+  const copyStatus = document.getElementById('copy-status');
+  function showGarden(number = null) {
+    garden.classList.toggle('has-result', number !== null);
+    gardenNumber.textContent = number === null ? '?' : String(number);
+    gardenCaption.textContent = number === null ? 'あなたの数字に、出会う。' : '自分を知る、小さな手がかり。';
+    garden.querySelectorAll('[data-number]').forEach(digit => digit.classList.toggle('is-active', Number(digit.dataset.number) === number));
+  }
   function refreshDays() {
     const selected = day.value;
     const y = /^\d{4}$/.test(year.value) ? Number(year.value) : 2000;
@@ -23,6 +33,8 @@
     result.hidden = true;
     error.hidden = true;
     fields.forEach(field => field.removeAttribute('aria-invalid'));
+    showGarden();
+    copyStatus.textContent = '';
   }
   year.addEventListener('input', () => { clearResult(); refreshDays(); });
   month.addEventListener('change', () => { clearResult(); refreshDays(); });
@@ -47,6 +59,8 @@
     fields.forEach(field => field.removeAttribute('aria-invalid'));
     const number = calculator.birthNumber(y, m, d);
     const meaning = calculator.meanings[number];
+    showGarden(number);
+    copyStatus.textContent = '';
     document.getElementById('result-number').textContent = String(number);
     document.getElementById('result-announcement').textContent = String(number);
     document.getElementById('result-keywords').textContent = meaning.keywords;
@@ -62,6 +76,16 @@
   });
   form.querySelector('fieldset').disabled = false;
   form.querySelector('[type="submit"]').disabled = false;
+
+  document.getElementById('copy-question').addEventListener('click', async () => {
+    try {
+      if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
+      await navigator.clipboard.writeText(document.getElementById('result-question').textContent);
+      copyStatus.textContent = '問いをコピーしました。';
+    } catch {
+      copyStatus.textContent = '問いの文章を選択してコピーしてください。';
+    }
+  });
 
   const menuButton = document.querySelector('.menu-toggle');
   const menu = document.getElementById('mobile-menu');
@@ -80,7 +104,35 @@
   menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => closeMenu()));
   document.addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) closeMenu(true); });
   document.addEventListener('click', event => { if (!menu.hidden && !event.target.closest('.site-header')) closeMenu(); });
-  window.matchMedia('(min-width: 781px)').addEventListener('change', event => { if (event.matches) closeMenu(); });
+  window.matchMedia('(min-width: 881px)').addEventListener('change', event => { if (event.matches) closeMenu(); });
+
+  // A passive progress cue; the browser owns scrolling and anchor navigation.
+  const header = document.querySelector('.site-header');
+  const progress = document.querySelector('.page-progress span');
+  const navLinks = document.querySelectorAll('.desktop-nav a');
+  const navSections = Array.from(navLinks, link => document.querySelector(link.hash));
+  let scrollFrame = null;
+  function updateScrollState() {
+    scrollFrame = null;
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    const fraction = maxScroll > 0 ? Math.min(1, Math.max(0, window.scrollY / maxScroll)) : 0;
+    progress.style.transform = `scaleX(${fraction})`;
+    header.classList.toggle('is-scrolled', window.scrollY > 24);
+    let current = -1;
+    navSections.forEach((section, index) => {
+      if (section.getBoundingClientRect().top <= 180) current = index;
+    });
+    navLinks.forEach((link, index) => {
+      if (index === current) link.setAttribute('aria-current', 'true');
+      else link.removeAttribute('aria-current');
+    });
+  }
+  function scheduleScrollState() {
+    if (scrollFrame === null) scrollFrame = requestAnimationFrame(updateScrollState);
+  }
+  window.addEventListener('scroll', scheduleScrollState, { passive: true });
+  window.addEventListener('resize', scheduleScrollState, { passive: true });
+  scheduleScrollState();
 
   document.querySelectorAll('[data-dialog]').forEach(button => button.addEventListener('click', () => document.getElementById(button.dataset.dialog).showModal()));
   document.querySelectorAll('dialog').forEach(dialog => {

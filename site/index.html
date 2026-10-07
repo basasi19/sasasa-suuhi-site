@@ -9,6 +9,10 @@
   <meta property="og:description" content="数秘と対話で、あなたらしい一歩をいっしょに。無料ミニ鑑定・個別鑑定のご案内。">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
+  <link rel="canonical" href="https://basasi19.github.io/sasasa-suuhi-site/">
+  <meta property="og:url" content="https://basasi19.github.io/sasasa-suuhi-site/">
+  <meta property="og:image" content="https://basasi19.github.io/sasasa-suuhi-site/assets/hero-journal.webp">
+  <meta name="twitter:card" content="summary_large_image">
   <title>さささ｜あなたの無意識な本音をひも解く数秘術</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
@@ -17,97 +21,118 @@
 </head>
 <body>
   <div class="site-backdrop" aria-hidden="true"></div>
+  <div class="page-progress" aria-hidden="true"><span></span></div>
   <a class="skip-link" href="#main">本文へ進む</a>
+
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="#top" aria-label="さささ 数秘術 トップへ"><span>さささ</span><small>数秘術</small></a>
+      <a class="brand" href="#top" aria-label="さささ 数秘術 トップへ">
+        <svg class="brand-mark" viewBox="0 0 44 44" aria-hidden="true"><path d="M8 29C2 12 16 5 22 15S11 39 8 29ZM22 29C16 12 30 5 36 15S25 39 22 29"/><path d="M7 31C17 40 31 39 37 27"/></svg>
+        <span class="brand-type"><span>さささ</span><small>数秘と対話</small></span>
+      </a>
       <nav class="desktop-nav" aria-label="メインメニュー">
-        <a href="#approach">大切にしていること</a><a href="#about">自己紹介</a><a href="#session">料金</a>
+        <a href="#reading">無料ミニ鑑定</a><a href="#approach">私の想い</a><a href="#about">自己紹介</a><a href="#session">料金</a>
       </nav>
       <div class="header-actions">
-        <a class="button button-small" href="#booking">お申し込み</a>
+        <a class="button button-small" href="#booking">お申し込み <span aria-hidden="true">↗</span></a>
         <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
       </div>
     </div>
     <nav class="mobile-menu" id="mobile-menu" aria-label="スマートフォン用メニュー" hidden>
-      <a href="#reading">無料ミニ鑑定</a><a href="#approach">大切にしていること</a><a href="#about">自己紹介</a><a href="#session">料金</a><a href="#booking">お申し込み</a>
+      <a href="#reading"><small aria-hidden="true">01</small>無料ミニ鑑定</a><a href="#approach"><small aria-hidden="true">02</small>私の想い</a><a href="#about"><small aria-hidden="true">03</small>自己紹介</a><a href="#session"><small aria-hidden="true">04</small>料金</a><a href="#booking"><small aria-hidden="true">05</small>お申し込み</a>
     </nav>
   </header>
 
   <main id="main">
     <section class="hero container" id="top" aria-labelledby="hero-title">
       <div class="hero-copy">
+        <p class="hero-kicker"><span class="small-dot" aria-hidden="true"></span>自分を知る、小さな入口。</p>
         <h1 id="hero-title"><span class="hero-intro">あなたの知らない</span><span class="hero-focus">無意識な本音<span class="hero-particle">を、</span></span><span class="hero-ending">数秘術でひも解きます。</span></h1>
-        <p class="hero-description">数秘と対話で、<br class="mobile-break">あなたらしい一歩をいっしょに。</p>
-        <div class="hero-links"><a class="button" href="#reading">無料鑑定をためしてみる <span aria-hidden="true">→</span></a><a class="text-link" href="#session">個別鑑定について <span aria-hidden="true">›</span></a></div>
+        <p class="hero-description">数秘と対話で、<br>あなたらしい一歩をいっしょに。</p>
+        <div class="hero-links"><a class="button" href="#reading">無料鑑定をためしてみる <span class="button-arrow" aria-hidden="true">↗</span></a><a class="text-link" href="#session">個別鑑定について <span aria-hidden="true">→</span></a></div>
+        <p class="hero-note">無料・登録不要。まずは、生年月日から。</p>
       </div>
       <figure class="hero-visual">
-        <img src="./assets/hero-journal.webp" width="1200" height="900" fetchpriority="high" alt="木漏れ日の差す窓辺に、開いたノートと陶器のカップ、緑の小枝。">
-        <figcaption>自分らしく、<br>歩いていくために。</figcaption>
+        <div class="photo-frame"><img src="./assets/hero-journal.webp" width="1200" height="900" fetchpriority="high" alt="木漏れ日の差す窓辺に、開いたノートと陶器のカップ、緑の小枝。"></div>
+        <figcaption><span class="caption-line" aria-hidden="true"></span>自分らしく、歩いていくために。</figcaption>
+        <span class="photo-label" aria-hidden="true">a little moment for yourself</span>
       </figure>
+      <svg class="hero-thread" viewBox="0 0 600 680" aria-hidden="true"><path d="M598 23C417-13 476 198 590 142S494 44 379 174 471 404 279 406 35 426 74 534 167 637 1 672"/></svg>
+      <a class="scroll-cue" href="#intro"><span>少し、立ち止まってみる</span><span class="scroll-line" aria-hidden="true"></span></a>
     </section>
 
-    <section class="reading-section container reveal" id="reading" aria-labelledby="reading-title">
-      <div class="reading-panel">
-        <span class="eyebrow">無料ミニ鑑定</span>
-        <h2 id="reading-title">あなたのベースナンバーを<br>見てみましょう</h2>
-        <p class="section-intro">生年月日から、あなたの土台となる数字を。</p>
-        <form id="birth-form" class="birth-form" novalidate>
-          <fieldset disabled><legend>生年月日</legend>
-            <div class="date-inputs">
-              <div class="date-part date-year"><label for="birth-year" class="visually-hidden">生まれた年（西暦4桁）</label><input id="birth-year" name="year" type="text" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" placeholder="1992" autocomplete="off" required aria-describedby="birth-error"><span>年</span></div>
-              <div class="date-part"><label for="birth-month" class="visually-hidden">生まれた月</label><select id="birth-month" name="month" required aria-describedby="birth-error"><option value="">―</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select><span>月</span></div>
-              <div class="date-part"><label for="birth-day" class="visually-hidden">生まれた日</label><select id="birth-day" name="day" required aria-describedby="birth-error"><option value="">―</option></select><span>日</span></div>
-            </div>
-          </fieldset>
-          <p id="birth-error" class="form-error" role="alert" hidden></p>
-          <button class="button calculate-button" type="submit" disabled>ベースナンバーを見る <span aria-hidden="true">→</span></button>
-          <p class="form-note">無料・登録不要<br><span>入力した生年月日は保存・送信しません。</span></p>
-        </form>
-        <noscript><p class="noscript-note">無料鑑定を使うには、ブラウザのJavaScriptを有効にしてください。</p></noscript>
+    <section class="intro-section container reveal" id="intro" aria-labelledby="intro-title">
+      <svg class="intro-thread" viewBox="0 0 120 60" aria-hidden="true"><path d="M1 38C26 5 40 55 65 25S104 2 119 34"/></svg>
+      <p class="eyebrow">数秘と対話の時間</p>
+      <h2 id="intro-title">まだ言葉にならない気持ちにも、<br>あなたらしさは、あります。</h2>
+      <p class="intro-copy">いつもの自分を、少し違う角度から見てみる。<br>数字の意味を手がかりに、<br class="mobile-break">あなたの本音や持ち味を一緒にひも解いていきます。</p>
+    </section>
+
+    <section class="reading-section section-surface" id="reading" aria-labelledby="reading-title">
+      <div class="reading-panel container">
+        <div class="reading-heading reveal"><p class="section-label"><span aria-hidden="true">01</span>無料ミニ鑑定</p><h2 id="reading-title">あなたのベースナンバーを<br>見てみましょう</h2><p class="section-intro">生年月日から、あなたの土台となる数字を。<br>自分を知る、はじめの一歩です。</p></div>
+        <div class="reading-experience reveal">
+          <div class="number-garden" aria-hidden="true">
+            <svg viewBox="0 0 400 400" class="garden-thread"><path d="M207 35C292 2 392 100 362 215S253 384 147 359 15 198 52 115 181 49 228 85 249 183 193 201 126 133 186 118 281 195 244 251 147 256 122 209"/></svg>
+            <div class="garden-ring"></div><div class="garden-center"><span class="garden-label">YOUR BASE NUMBER</span><span id="visual-number" class="garden-number">?</span><span id="visual-caption" class="garden-caption">あなたの数字に、出会う。</span></div>
+            <div class="garden-digits"><span style="--i:0" data-number="1">1</span><span style="--i:1" data-number="2">2</span><span style="--i:2" data-number="3">3</span><span style="--i:3" data-number="4">4</span><span style="--i:4" data-number="5">5</span><span style="--i:5" data-number="6">6</span><span style="--i:6" data-number="7">7</span><span style="--i:7" data-number="8">8</span><span style="--i:8" data-number="9">9</span></div>
+          </div>
+          <div class="reading-input">
+            <form id="birth-form" class="birth-form" novalidate>
+              <fieldset disabled><legend>あなたの生年月日</legend>
+                <div class="date-inputs">
+                  <div class="date-part date-year"><label for="birth-year">西暦</label><div><input id="birth-year" name="year" type="text" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" placeholder="1992" autocomplete="off" required aria-label="生まれた年（西暦4桁）" aria-describedby="birth-error"><span>年</span></div></div>
+                  <div class="date-part"><label for="birth-month">月</label><div><select id="birth-month" name="month" required aria-label="生まれた月" aria-describedby="birth-error"><option value="">―</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select><span>月</span></div></div>
+                  <div class="date-part"><label for="birth-day">日</label><div><select id="birth-day" name="day" required aria-label="生まれた日" aria-describedby="birth-error"><option value="">―</option></select><span>日</span></div></div>
+                </div>
+              </fieldset>
+              <p id="birth-error" class="form-error" role="alert" hidden></p>
+              <button class="button calculate-button" type="submit" disabled>ベースナンバーを見る <span class="button-arrow" aria-hidden="true">→</span></button>
+              <p class="form-note"><span class="privacy-dot" aria-hidden="true"></span>無料・登録不要<br><span>生年月日は保存・送信しません。</span></p>
+            </form>
+            <noscript><p class="noscript-note">無料鑑定を使うには、ブラウザのJavaScriptを有効にしてください。</p></noscript>
+            <p class="reading-aside">数字は、自分と向き合うための手がかり。<br>あなたを決めつけるものではありません。</p>
+          </div>
+        </div>
         <div id="reading-result" class="result-wrap" hidden>
           <article class="result-card" aria-labelledby="result-heading">
-            <h3 id="result-heading" tabindex="-1">あなたのベースナンバー <span class="visually-hidden" id="result-announcement"></span></h3>
-            <p class="result-number" id="result-number" aria-hidden="true"></p>
-            <p class="result-keywords" id="result-keywords"></p>
-            <p class="result-description" id="result-description"></p>
-            <div class="result-question"><span>自分に聞いてみるなら</span><p id="result-question"></p></div>
-            <p class="result-note">ひとつの数字からの、小さなヒントです。<br>ご自身の実感と照らし合わせてみてください。</p>
+            <div class="result-identity"><h3 id="result-heading" tabindex="-1">あなたのベースナンバー <span class="visually-hidden" id="result-announcement"></span></h3><p class="result-number" id="result-number" aria-hidden="true"></p><p class="result-keywords" id="result-keywords"></p></div>
+            <div class="result-copy"><p class="result-description" id="result-description"></p><div class="result-question"><span class="question-label">自分に聞いてみるなら</span><p id="result-question"></p><button class="copy-question" id="copy-question" type="button">この問いをコピー <span aria-hidden="true">↗</span></button><span id="copy-status" class="copy-status" role="status"></span></div><p class="result-note">ひとつの数字からの、小さなヒントです。<br>ご自身の実感と照らし合わせてみてください。</p></div>
           </article>
-          <div class="reading-followup"><p>個別鑑定では、名前から読む数字も重ねながら、<br class="desktop-break">あなたの本音や持ち味を、お話を通してひも解いていきます。</p><a class="button button-outline" href="#session">個別鑑定について <span aria-hidden="true">→</span></a></div>
+          <div class="reading-followup"><p>個別鑑定では、名前から読む数字も重ねながら、<br class="desktop-break">あなたの本音や持ち味を、お話を通してひも解いていきます。</p><a class="text-link" href="#session">個別鑑定について <span aria-hidden="true">→</span></a></div>
         </div>
       </div>
     </section>
 
-    <section class="approach container section-space reveal" id="approach" aria-labelledby="approach-title">
-      <span class="eyebrow">私の想い</span>
-      <h2 id="approach-title">数秘術で、<br class="mobile-break">私が大切にしていること</h2>
+    <section class="approach container section-space" id="approach" aria-labelledby="approach-title">
+      <div class="approach-heading reveal"><p class="section-label"><span aria-hidden="true">02</span>私の想い</p><h2 id="approach-title">数秘術で、<br>私が大切に<br class="desktop-break">していること</h2><p class="approach-lead">数字を通して、<br>目の前のあなたを見つめる。</p><svg class="approach-thread" viewBox="0 0 180 130" aria-hidden="true"><path d="M2 104C49 143 148 93 125 43S29 46 65 77 172 119 177 3"/></svg></div>
       <div class="principles">
-        <article><span class="principle-number" aria-hidden="true">01</span><h3>丁寧に伝える</h3><p>数字には、それぞれ意味や役割があります。ひとつずつ丁寧にお伝えし、あなたをより深く知る手がかりにします。</p></article>
-        <article><span class="principle-number" aria-hidden="true">02</span><h3>数字で決めつけない</h3><p>数字の意味だけで、あなたを決めつけません。同じ数字でも、その方の人柄や経験によって読み解き方は変わります。</p></article>
-        <article><span class="principle-number" aria-hidden="true">03</span><h3>自分に合う一歩を見つける</h3><p>本音や持ち味を知り、<br>これからを一緒に考えます。</p></article>
+        <article class="reveal"><span class="principle-number" aria-hidden="true">01</span><div><h3>丁寧に伝える</h3><p>数字には、それぞれ意味や役割があります。ひとつずつ丁寧にお伝えし、あなたをより深く知る手がかりにします。</p></div></article>
+        <article class="reveal"><span class="principle-number" aria-hidden="true">02</span><div><h3>数字で決めつけない</h3><p>数字の意味だけで、あなたを決めつけません。同じ数字でも、その方の人柄や経験によって読み解き方は変わります。</p></div></article>
+        <article class="reveal"><span class="principle-number" aria-hidden="true">03</span><div><h3>自分に合う一歩を見つける</h3><p>本音や持ち味を知り、<br>これからを一緒に考えます。</p></div></article>
+        <p class="approach-note reveal">直感は一つの見方としてお伝えします。<br>相手の本心や未来を断定するものではありません。</p>
       </div>
-      <p class="approach-note">直感は一つの見方としてお伝えします。<br class="mobile-break">相手の本心や未来を断定するものではありません。</p>
     </section>
 
-    <section class="about container reveal" id="about" aria-labelledby="about-title">
-      <div class="portrait"><img src="./assets/sasasa-portrait.webp" width="640" height="640" loading="lazy" alt="緑の広がる公園で、白いブラウスを着たさささの後ろ姿。"></div>
-      <div class="about-copy"><span class="eyebrow">自己紹介</span><h2 id="about-title">はじめまして、<br class="mobile-break">さささです。</h2><p>師匠との出会いをきっかけに、<br>「口下手なあなたには、数秘術がいいかも」と<br class="desktop-break">勧められ、学び始めました。</p><p>うまく言葉にならない気持ちも、一緒に少しずつ。<br class="desktop-break">あなたの本音や持ち味をひもとく時間を、<br class="desktop-break">大切にしています。</p><a class="instagram-link" href="https://www.instagram.com/sasasa_suuhi/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".75"/></svg><span>Instagram <span class="instagram-handle">@sasasa_suuhi</span></span><span class="visually-hidden">（別のタブで開きます）</span></a></div>
+    <section class="about section-surface" id="about" aria-labelledby="about-title">
+      <div class="about-inner container">
+        <div class="portrait-wrap reveal"><div class="portrait"><img src="./assets/sasasa-portrait.webp" width="640" height="640" loading="lazy" alt="緑の広がる公園で、白いブラウスを着たさささの後ろ姿。"></div><p class="portrait-caption">さささ <span>数秘術鑑定</span></p><svg class="portrait-thread" viewBox="0 0 420 420" aria-hidden="true"><path d="M392 75C224-27 5 77 36 247S344 465 390 270 176 138 207 241 339 283 394 367"/></svg></div>
+        <div class="about-copy reveal"><p class="section-label"><span aria-hidden="true">03</span>自己紹介</p><h2 id="about-title">はじめまして、<br>さささです。</h2><p>師匠との出会いをきっかけに、<br>「口下手なあなたには、数秘術がいいかも」と<br class="desktop-break">勧められ、学び始めました。</p><p>うまく言葉にならない気持ちも、一緒に少しずつ。<br class="desktop-break">あなたの本音や持ち味をひもとく時間を、<br class="desktop-break">大切にしています。</p><a class="instagram-link" href="https://www.instagram.com/sasasa_suuhi/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".75"/></svg><span>@sasasa_suuhi</span><span aria-hidden="true">↗</span><span class="visually-hidden">（別のタブで開きます）</span></a></div>
+      </div>
     </section>
 
-    <section class="session container section-space reveal" id="session" aria-labelledby="session-title">
-      <div class="session-panel"><div><span class="eyebrow">料金</span><h2 id="session-title">個別鑑定のご案内</h2><p class="price"><span><strong>45</strong>分</span><span><strong>5,000</strong>円</span></p><p class="session-includes">ご本人1名・鑑定書PDF付き</p></div><div class="session-details"><p>オンライン鑑定 ／ オフライン鑑定</p><p>オンラインは音声で、顔出し不要</p><p>鑑定後に、2ページのPDFをお届け</p></div></div>
+    <section class="session container section-space" id="session" aria-labelledby="session-title">
+      <div class="session-heading reveal"><p class="section-label"><span aria-hidden="true">04</span>個別鑑定</p><h2 id="session-title">あなたの言葉で、<br>お話ししてみませんか。</h2><p class="section-intro">相談したいことが、まだまとまっていなくても。<br>ひとつずつ、一緒に考えていきます。</p></div>
+      <div class="session-panel reveal"><div class="session-price"><p class="session-name">個別鑑定のご案内</p><p class="price"><span><strong>45</strong>分</span><span><strong>5,000</strong>円</span></p><p class="session-includes">ご本人1名・鑑定書PDF付き</p></div><div class="session-details"><p><span class="detail-dot" aria-hidden="true"></span>オンライン鑑定 ／ オフライン鑑定</p><p><span class="detail-dot" aria-hidden="true"></span>オンラインは音声で、顔出し不要</p><p><span class="detail-dot" aria-hidden="true"></span>鑑定後に、2ページのPDFをお届け</p><button class="text-link details-link" type="button" data-dialog="terms-dialog">ご利用案内を見る <span aria-hidden="true">↗</span></button></div></div>
     </section>
 
-    <section class="booking container reveal" id="booking" aria-labelledby="booking-title">
-      <span class="eyebrow">お話ししてみませんか</span><h2 id="booking-title">お申し込み</h2><p>まずは、ご希望の日程をお知らせください。</p>
-      <a class="button booking-button" href="https://forms.gle/M8jbemc9rDprEHAz6" target="_blank" rel="noopener noreferrer">申し込みフォームを開く <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M10 5H5v14h14v-5"/></svg><span class="visually-hidden">（別のタブで開きます）</span></a><span class="external-note">Googleフォームへ移動します</span><p class="booking-note">送信だけでは予約は確定せず、<br class="mobile-break">お支払いも発生しません。<br>2日以内に、メールで日程調整のご連絡をします。</p>
+    <section class="booking section-surface" id="booking" aria-labelledby="booking-title">
+      <div class="booking-inner container reveal"><p class="section-label"><span aria-hidden="true">05</span>お申し込み</p><h2 id="booking-title">ここから、<br>あなたの話を。</h2><p class="booking-intro">まずは、ご希望の日程をお知らせください。</p><a class="button booking-button" href="https://forms.gle/M8jbemc9rDprEHAz6" target="_blank" rel="noopener noreferrer">申し込みフォームを開く <span class="button-arrow" aria-hidden="true">↗</span><span class="visually-hidden">（別のタブで開きます）</span></a><span class="external-note">Googleフォームへ移動します</span><p class="booking-note">送信だけでは予約は確定せず、お支払いも発生しません。<br>2日以内に、メールで日程調整のご連絡をします。</p><svg class="booking-thread" viewBox="0 0 480 270" aria-hidden="true"><path d="M1 250C140 310 216 155 187 106S47 196 147 194 386 69 351 26 269 58 324 84 421 74 479 1"/></svg></div>
     </section>
   </main>
 
-  <footer class="site-footer container"><div><p>日々の言葉は、Instagramで。</p><a href="https://www.instagram.com/sasasa_suuhi/" target="_blank" rel="noopener noreferrer">@sasasa_suuhi<span class="visually-hidden">（別のタブで開きます）</span></a></div><div class="footer-right"><span>さささ｜数秘術</span><button type="button" data-dialog="privacy-dialog">プライバシー</button><button type="button" data-dialog="terms-dialog">ご利用案内</button></div></footer>
-  <nav class="mobile-dock" aria-label="すぐにアクセス"><a class="button button-outline" href="#reading">無料鑑定</a><a class="button" href="#booking">お申し込み</a></nav>
-
+  <footer class="site-footer container"><div class="footer-signature"><a class="footer-brand" href="#top">さささ</a><p>数秘と対話で、あなたらしい一歩を。</p></div><div class="footer-social"><p>日々の言葉は、Instagramで。</p><a href="https://www.instagram.com/sasasa_suuhi/" target="_blank" rel="noopener noreferrer">@sasasa_suuhi <span aria-hidden="true">↗</span><span class="visually-hidden">（別のタブで開きます）</span></a></div><div class="footer-bottom"><span>© さささ｜数秘術</span><div><button type="button" data-dialog="privacy-dialog">プライバシー</button><button type="button" data-dialog="terms-dialog">ご利用案内</button><a href="#top">ページの上へ <span aria-hidden="true">↑</span></a></div></div></footer>
+  <nav class="mobile-dock" aria-label="すぐにアクセス"><a class="button button-outline" href="#reading">無料鑑定</a><a class="button" href="#booking">お申し込み <span aria-hidden="true">↗</span></a></nav>
   <dialog id="privacy-dialog" aria-labelledby="privacy-title"><div class="dialog-content"><div class="dialog-heading"><h2 id="privacy-title">プライバシー</h2><button type="button" data-close aria-label="閉じる">×</button></div><h3>無料ミニ鑑定について</h3><p>生年月日は、このページを開いているブラウザの中で計算するためにのみ使います。当サイトのプログラムは、入力値を保存したり、外部へ送信したりしません。アクセス解析や広告用のCookieも設置していません。</p><h3>お申し込みについて</h3><p>お申し込みはGoogleフォームで受け付けています。入力された情報は、予約調整・鑑定・資料のお渡しと、それに伴うご連絡に使用します。</p><p>GoogleフォームやInstagramを開いた先では、それぞれのサービスのプライバシーポリシーが適用されます。サイトの配信元は、配信や安全管理のためのアクセス情報を取得する場合があります。</p><p>個人情報についてのお問い合わせは、<a href="https://www.instagram.com/sasasa_suuhi/" target="_blank" rel="noopener noreferrer">InstagramのDM</a>へご連絡ください。</p></div></dialog>
   <dialog id="terms-dialog" aria-labelledby="terms-title"><div class="dialog-content"><div class="dialog-heading"><h2 id="terms-title">ご利用案内</h2><button type="button" data-close aria-label="閉じる">×</button></div><h3>鑑定内容</h3><p>ご本人1名・45分・5,000円。ご本人の性質や、気になるテーマひとつを中心にお話しします。ご相談内容が決まっていなくても大丈夫です。</p><p>オンライン鑑定は音声で、お互いに顔出しは不要です。オフライン鑑定の場所は、日程調整時にご案内します。</p><h3>お申し込みと資料</h3><p>フォームは予約希望の受付です。送信だけでは予約確定やお支払いにはなりません。2日以内に、メールで日程調整のご連絡をします。</p><p>鑑定結果と数字の説明をまとめた2ページのPDFを、鑑定後2日以内にメールでお送りします。納品後7日以内、鑑定内容についてのご質問に1往復まで対応します。</p><h3>お支払い・変更について</h3><p>オンラインは日程調整後の事前振込、オフラインは当日現金または事前振込です。振込手数料はお客様負担となります。会場費・飲食代など別途費用がある場合は、予約確定前にお伝えします。</p><p>日程変更は1回まで無料です。鑑定開始前のキャンセルは鑑定料を全額返金します。当日欠席も初回は返金か1回の振替に対応します。キャンセルや無断欠席が繰り返される場合は、以後の予約を見合わせることがあります。運営側の都合で実施できない場合は、返金か振替をお選びいただけます。</p><p>お申し込みの際は、<a href="https://forms.gle/M8jbemc9rDprEHAz6" target="_blank" rel="noopener noreferrer">フォームに記載のご案内</a>もご確認ください。</p></div></dialog>
 </body>

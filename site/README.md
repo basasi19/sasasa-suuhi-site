@@ -48,6 +48,8 @@ GitHubの設定は`Settings` → `Pages` → `Source: GitHub Actions`です。�
 
 ## 表示と文字
 
+2026年10月7日の改訂では、写真と余白を中心としたレイアウト、細い「ひも」のモチーフ、数字を選び出す無料鑑定の表示、結果の問いをコピーするボタンを追加しました。コピーは操作したときだけ端末のクリップボードを使います。スクロール自体はブラウザ標準の動作を保ちます。
+
 画面幅に合わせた表示、スマートフォンの下部ボタン、メニュー、スクロール時の表示、キーボード操作に対応しています。端末で動きを減らす設定をしている場合は、スクロール演出を抑えます。
 
 見出し・本文ともに、端末にある「UDデジタル教科書体 NK」を優先します。その書体がない端末では、同梱のKlee Oneに切り替わります。Windowsのフォントファイルそのものは配布していません。
@@ -62,3 +64,9 @@ Klee OneはGoogle Fonts公式配布から取得したSIL Open Font Licenseのフ
 ## 公開について
 
 [GitHubリポジトリ](https://github.com/basasi19/sasasa-suuhi-site)にサイト一式を保管し、[GitHub Pages](https://basasi19.github.io/sasasa-suuhi-site/)で公開します。この公開URLをInstagramや名刺用QRコードに利用できます。
+
+## 改訂前のサイトに戻す
+
+2026年10月7日の改訂前は、[保存用ブランチ `codex/original-2026-10-07`](https://github.com/basasi19/sasasa-suuhi-site/tree/codex/original-2026-10-07)に保管しています。元のコミットは `5a4e8575ec1ea6ca3fe93f6e9f8763733d6714de` です。
+
+手元ではタグ `site-original-2026-10-07` と、`outputs/site-backups/2026-10-07-original/` 内のZIP・Git bundle・復元スクリプトも保存しています。公開サイトを戻す場合は、保存した版の `site/` を `main` に戻して更新します。

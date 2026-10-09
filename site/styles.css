@@ -216,6 +216,10 @@ legend {font-size:20px;margin-bottom:23px;padding:0}
 .booking .section-label {justify-content:center}
 .booking h2 {font-size:clamp(44px,5vw,68px);line-height:1.65;letter-spacing:.04em}
 .booking-intro {font-size:16px;color:var(--muted);margin-top:28px}
+.booking-hours {margin:27px auto 0;color:var(--ink);font-size:15px;line-height:1.9}
+.booking-hours > p:first-child {font-size:12px;color:var(--muted);margin-bottom:7px}
+.booking-hours > p:nth-child(2) {display:flex;justify-content:center;flex-wrap:wrap;gap:8px 26px}
+.booking-hours small {display:block;margin-top:10px;font-size:12px;color:var(--muted)}
 .booking-button {margin-top:32px;min-width:330px}
 .external-note {display:block;font-size:11px;color:var(--muted);margin-top:11px}
 .booking-note {font-size:12px;color:var(--muted);line-height:2.1;margin-top:30px}
